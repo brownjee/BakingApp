@@ -19,6 +19,7 @@ import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 
+import static android.support.test.espresso.matcher.ViewMatchers.withText;
 import static org.hamcrest.Matchers.allOf;
 
 /**
@@ -40,6 +41,9 @@ public class MainActivityTest {
                                ,
                         isDisplayed()));
         recyclerView.perform(actionOnItemAtPosition(1, click()));
+
+        ViewInteraction appButton = onView(allOf(withId(R.id.next), withText("Next"), isDisplayed()));
+        appButton.perform(click());
 
 
 

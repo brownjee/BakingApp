@@ -168,7 +168,7 @@ public class StepsDetailsActivityFragment extends Fragment implements ExoPlayer.
     @Override
     public void onPause() {
         super.onPause();
-        releasePlayer();
+
         exoPlayer.setPlayWhenReady(false);
         mediaSession.setActive(false);
 
