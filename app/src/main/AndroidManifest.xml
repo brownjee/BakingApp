@@ -35,7 +35,7 @@
         <activity
             android:name="ng.com.brownjee.bakingapp.activities.StepsDetailsActivity"
             android:label="@string/title_activity_steps_details"
-
+            android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme"/>
 
         <receiver android:name="ng.com.brownjee.bakingapp.appwidget.BakingWidgetProvider">
